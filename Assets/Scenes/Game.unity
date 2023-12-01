@@ -610,8 +610,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ingredientContainer: {fileID: 11400000, guid: 0723acbb3211343a6ab5527624043440, type: 2}
-  _ingredientsData: {fileID: 11400000, guid: 81aca2d9465324025b7569f301ec47d4, type: 2}
-  _dishDatas: {fileID: 11400000, guid: 263c4ccdf9a9149c49ff081002f1621b, type: 2}
+  _ingredientItemsData: {fileID: 11400000, guid: 81aca2d9465324025b7569f301ec47d4, type: 2}
+  _containerOfDishData: {fileID: 11400000, guid: 263c4ccdf9a9149c49ff081002f1621b, type: 2}
   _cauldron: {fileID: 1070717845}
 --- !u!1001 &1152411932
 PrefabInstance:

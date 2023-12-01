@@ -11,13 +11,14 @@ namespace Logic
     /// </summary>
     public class IngredientDataValue : IInitializable
     {
-        private IngredientItemsData _ingredientItemsData;
-        private List<Ingredient> _ingredients;
+        private readonly IngredientItemsData _ingredientItemsData;
         private readonly FileService _fileService;
+        private List<Ingredient> _ingredients;
 
-        public IngredientDataValue(FileService fileService)
+        public IngredientDataValue(FileService fileService, IngredientItemsData ingredientItemsData)
         {
             _fileService = fileService;
+            _ingredientItemsData = ingredientItemsData;
         }
 
         //Method that attempts to retrieve the value of an ingredient from a file.
