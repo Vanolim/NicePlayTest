@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112f9033ffbb45c799e1506ed08a3ac3, type: 3}
+  m_Name: DishDatas
+  m_EditorClassIdentifier: 
+  _dishDatas:
+  - <Type>k__BackingField: 1
+    <DishDataIngredientPresenceType>k__BackingField: 0
+    <MinCountElements>k__BackingField: 5
+    <MaxCountElements>k__BackingField: 5
+    <Priority>k__BackingField: 5
+    <Name>k__BackingField: "\u041C\u044F\u0441\u043E \u0432 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u043C
+      \u0441\u043E\u043A\u0443"
+  - <Type>k__BackingField: 1
+    <DishDataIngredientPresenceType>k__BackingField: 0
+    <MinCountElements>k__BackingField: 4
+    <MaxCountElements>k__BackingField: 4
+    <Priority>k__BackingField: 4
+    <Name>k__BackingField: "\u041C\u044F\u0441\u043E \u0441 \u0433\u0430\u0440\u043D\u0438\u0440\u043E\u043C"
+  - <Type>k__BackingField: 1
+    <DishDataIngredientPresenceType>k__BackingField: 0
+    <MinCountElements>k__BackingField: 2
+    <MaxCountElements>k__BackingField: 3
+    <Priority>k__BackingField: 4
+    <Name>k__BackingField: "\u0420\u0430\u0433\u0443"
+  - <Type>k__BackingField: 1
+    <DishDataIngredientPresenceType>k__BackingField: 1
+    <MinCountElements>k__BackingField: 0
+    <MaxCountElements>k__BackingField: 0
+    <Priority>k__BackingField: 2
+    <Name>k__BackingField: "\u041E\u0432\u043E\u0449\u043D\u043E\u0435 \u0440\u0430\u0433\u0443"
+  - <Type>k__BackingField: 2
+    <DishDataIngredientPresenceType>k__BackingField: 0
+    <MinCountElements>k__BackingField: 4
+    <MaxCountElements>k__BackingField: 5
+    <Priority>k__BackingField: 4
+    <Name>k__BackingField: "\u041B\u0443\u043A\u043E\u0432\u044B\u0439 \u0441\u0443\u043F"
+  - <Type>k__BackingField: 4
+    <DishDataIngredientPresenceType>k__BackingField: 0
+    <MinCountElements>k__BackingField: 4
+    <MaxCountElements>k__BackingField: 5
+    <Priority>k__BackingField: 4
+    <Name>k__BackingField: "\u041A\u0430\u0440\u0442\u043E\u0444\u0435\u043B\u044C\u043D\u043E\u0435
+      \u043F\u044E\u0440\u0435"
+  - <Type>k__BackingField: 5
+    <DishDataIngredientPresenceType>k__BackingField: 0
+    <MinCountElements>k__BackingField: 0
+    <MaxCountElements>k__BackingField: 0
+    <Priority>k__BackingField: 1
+    <Name>k__BackingField: "\u0421\u0443\u043F"
+  _comboDatas:
+  - <CountIdenticalIngredients>k__BackingField: 1
+    <Value>k__BackingField: 2
+  - <CountIdenticalIngredients>k__BackingField: 2
+    <Value>k__BackingField: 2
+  - <CountIdenticalIngredients>k__BackingField: 3
+    <Value>k__BackingField: 1.5
+  - <CountIdenticalIngredients>k__BackingField: 4
+    <Value>k__BackingField: 1.25
+  - <CountIdenticalIngredients>k__BackingField: 5
+    <Value>k__BackingField: 1

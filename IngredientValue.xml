@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<IngedientCollection>
+    <Ingredients>
+        <Ingredient name = "Морковь">
+            <Value>
+                20
+            </Value>
+        </Ingredient>
+        <Ingredient name = "Мясо">
+            <Value>
+                50
+            </Value>
+        </Ingredient>
+        <Ingredient name = "Лук">
+            <Value>
+                40
+            </Value>
+        </Ingredient>
+        <Ingredient name = "Перец">
+            <Value>
+                30
+            </Value>
+        </Ingredient>
+        <Ingredient name = "Картошка">
+            <Value>
+                10
+            </Value>
+        </Ingredient>
+    </Ingredients>
+</IngedientCollection>

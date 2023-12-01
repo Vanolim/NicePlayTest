@@ -1,0 +1,18 @@
+{
+    "name": "Dish",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0736849ad84144739831a553eb2f9498",
+        "GUID:35c4dec0c6dc841689a2f3f3af787b0e",
+        "GUID:7167d9f83294d483290e338c6c006a55"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
