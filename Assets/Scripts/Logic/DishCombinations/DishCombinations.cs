@@ -1,8 +1,10 @@
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Core;
 using Dish;
 using GameItem;
+using UnityEngine;
 using Zenject;
 
 namespace Logic
@@ -15,24 +17,24 @@ namespace Logic
         private readonly IInputService _inputService;
         private readonly IngredientItemsData _ingredientItemsData;
         private readonly DishIdentifier _dishIdentifier;
-        private readonly FileService _fileService;
 
         private const string _fileName = "AllDishCombination.txt";
 
+        private string DestinationFile => Application.persistentDataPath + "/" + _fileName;
+
         public DishCombinations(IInputService inputService, IngredientItemsData ingredientItemsData, 
-            DishIdentifier dishIdentifier, FileService fileService)
+            DishIdentifier dishIdentifier)
         {
             _inputService = inputService;
             _ingredientItemsData = ingredientItemsData;
             _dishIdentifier = dishIdentifier;
-            _fileService = fileService;
         }
         
         private void SaveAllDishCombinationInFile()
         {
             string[] values = GetDishViewValues(GetAllCombinationIngredients(_ingredientItemsData.IngredientItemData, 
                 _ingredientItemsData.ValueIngredientsToCooked));
-            _fileService.SaveToFile(values, _fileName);
+            SaveToFile(values);
         }
         
         //Method that computes all possible combinations
@@ -80,6 +82,17 @@ namespace Logic
             }
 
             return allDishesViewValue;
+        }
+
+        //Method that saved data to file 
+        private void SaveToFile(string[] value)
+        {
+            if (File.Exists(DestinationFile) == false)
+            {
+                File.WriteAllText(DestinationFile, "");
+            }
+            
+            File.AppendAllLines(DestinationFile, value);
         }
         
         public void Initialize()

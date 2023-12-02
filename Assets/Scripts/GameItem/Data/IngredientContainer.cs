@@ -20,7 +20,7 @@ namespace GameItem
             }
             catch
             {
-                Debug.LogError("IngredientContainer haven't " + ingredientType);
+                Debug.LogError("IngredientContainer doesn't have " + ingredientType);
                 throw;
             }
         }

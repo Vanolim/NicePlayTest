@@ -7,14 +7,14 @@ namespace Logic
     /// <summary>
     /// Object responsible for object movement
     /// </summary>
-    public class IngredientMovement : IFixedTickable
+    public class IngredientItemMovement : IFixedTickable
     {
         private readonly IInputService _inputService;
         private GameItem.IngredientItem _target;
 
         private const float _moveSpeed = 20f;
 
-        public IngredientMovement(IInputService inputService)
+        public IngredientItemMovement(IInputService inputService)
         {
             _inputService = inputService;
         }

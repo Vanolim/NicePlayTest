@@ -15,9 +15,8 @@ namespace Core.Installer
         public override void InstallBindings()
         {
             Container.Bind<HUB>().FromComponentInNewPrefab(_hub).AsSingle().NonLazy();
-            Container.Bind<CoroutineService>().FromInstance(new CoroutineService(target: this)).AsSingle().NonLazy();
-            Container.Bind<SaveLoadService>().AsSingle();
-            Container.Bind<FileService>().AsSingle().NonLazy();
+            Container.Bind<CoroutineService>().FromInstance(new CoroutineService(target: this)).AsSingle().Lazy();
+            Container.Bind<SaveLoadService>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<PlayerInput>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<RestartService>().AsSingle();
         }

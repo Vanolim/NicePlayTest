@@ -30,7 +30,7 @@ namespace GameItem
             }
         }
 
-        private void Awake()
+        private void Start()
         {
             _cauldronAnimation.SetDefault();
         }

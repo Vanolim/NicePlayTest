@@ -19,17 +19,17 @@ namespace Logic
         private readonly HUB _hub;
         private readonly RestartService _restartService;
         private readonly SaveLoadService _saveLoadService;
-        private readonly IngredientDataValue _ingredientDataValue;
+        private readonly IngredientItemWorth _ingredientItemWorth;
         private int _globalValue;
 
         public CounterWorthDish(ContainerOfDishData containerOfDishData, HUB hub, RestartService restartService, 
-            SaveLoadService saveLoadService, IngredientDataValue ingredientDataValue)
+            SaveLoadService saveLoadService, IngredientItemWorth ingredientItemWorth)
         {
             _containerOfDishData = containerOfDishData;
             _hub = hub;
             _restartService = restartService;
             _saveLoadService = saveLoadService;
-            _ingredientDataValue = ingredientDataValue;
+            _ingredientItemWorth = ingredientItemWorth;
         }
 
         //Method that outputs the value of a dish based on its ingredients
@@ -42,7 +42,7 @@ namespace Logic
                 if (countedIngredients.Contains(ingredientData.Type) == false)
                 {
                     int countElement = ingredients.Count(x => x.Type == ingredientData.Type);
-                    value += Convert.ToInt32(_ingredientDataValue.GetValue(ingredientData.Name) 
+                    value += Convert.ToInt32(_ingredientItemWorth.GetValue(ingredientData.Name) 
                                              * countElement * _containerOfDishData.GetComboData(countElement));
                     countedIngredients.Add(ingredientData.Type);
                 }

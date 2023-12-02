@@ -8,7 +8,7 @@ namespace GameItem
     public class CauldronIngredientView : MonoBehaviour
     {
         [SerializeField]
-        private IngredientIcon ingredientIcon;
+        private IngredientIcon _ingredientIcon;
 
         [SerializeField]
         private RectTransform _contentContainer;
@@ -22,7 +22,7 @@ namespace GameItem
             _ingredientIcons = new IngredientIcon[maxCountIngredients];
             for (int i = 0; i < maxCountIngredients; i++)
             {
-                IngredientIcon instance = Instantiate(ingredientIcon, _contentContainer);
+                IngredientIcon instance = Instantiate(_ingredientIcon, _contentContainer);
                 _ingredientIcons[i] = instance;
             }
         }

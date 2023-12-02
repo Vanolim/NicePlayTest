@@ -21,7 +21,7 @@ namespace Logic
         private const float _delayDetect = 0.1f;
 
         public event Action<IInteractable> OnStartDetect;
-        public event Action<IInteractable> OnFinishDetect;
+        public event Action OnFinishDetect;
 
         public InputInteractDetector(IInputService inputService, CoroutineService coroutineService)
         {
@@ -47,7 +47,7 @@ namespace Logic
                     if (_target != default)
                     {
                         _target = default;
-                        OnFinishDetect?.Invoke(_target);
+                        OnFinishDetect?.Invoke();
                     }
                 }
 
@@ -55,6 +55,7 @@ namespace Logic
             }
         }
 
+        //Method that attempts to detect IInteractable with a ray
         private bool TryDetectWithRay(ref IInteractable interactable)
         {
             RaycastHit2D hit = Physics2D.Raycast(_inputService.InputPosition, Vector2.zero);
@@ -68,6 +69,7 @@ namespace Logic
             return false;
         }
 
+        //Method that attempts to detect IInteractable with a circle
         private bool TryDetectWithCircleCast(ref IInteractable interactable)
         {
             RaycastHit2D hit = Physics2D.CircleCast(_inputService.InputPosition, _addDetectedRadius, Vector2.zero);

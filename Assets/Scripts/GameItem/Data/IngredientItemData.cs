@@ -18,7 +18,7 @@ namespace GameItem
         public Sprite IngredientIconSprite { get; private set; }
         
         [field: SerializeField]
-        public int DefaultValue { get; private set; }
+        public int DefaultWorth { get; private set; }
         
         [field: SerializeField]
         public string Name { get; private set; }

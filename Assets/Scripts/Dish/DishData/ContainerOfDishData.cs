@@ -8,7 +8,7 @@ namespace Dish
     /// <summary>
     /// Container of information about all dish and combo 
     /// </summary>
-    [CreateAssetMenu(fileName = "DishDatas", menuName = "GameData/DishDatas")]
+    [CreateAssetMenu(fileName = "DishData", menuName = "GameData/DishData")]
     public class ContainerOfDishData : ScriptableObject
     {
         [SerializeField]

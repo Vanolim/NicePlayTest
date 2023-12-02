@@ -9,13 +9,13 @@ namespace Logic
     /// <summary>
     /// Object that spawns an ingredient item from a spot and stores active ingredient items
     /// </summary>
-    public class IngredientSpawner : IRestartable, IInitializable
+    public class IngredientItemSpawner : IRestartable, IInitializable
     {
         private readonly IngredientContainer _ingredientContainer;
         private readonly RestartService _restartService;
         private readonly List<IngredientItem> _activeIngredients = new();
         
-        public IngredientSpawner(IngredientContainer ingredientContainer, RestartService restartService)
+        public IngredientItemSpawner(IngredientContainer ingredientContainer, RestartService restartService)
         {
             _ingredientContainer = ingredientContainer;
             _restartService = restartService;
@@ -42,8 +42,10 @@ namespace Logic
         {
             for (int i = 0; i < _activeIngredients.Count; i++)
             {
+                _activeIngredients[i].OnDestroy -= RemoveIngredient;
                 _activeIngredients[i].Destroyed();
             }
+            _activeIngredients.Clear();
         }
 
         public void Initialize()

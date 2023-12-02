@@ -2,29 +2,29 @@
 <IngedientCollection>
     <Ingredients>
         <Ingredient name = "Морковь">
-            <Value>
+            <Worth>
                 20
-            </Value>
+            </Worth>
         </Ingredient>
         <Ingredient name = "Мясо">
-            <Value>
+            <Worth>
                 50
-            </Value>
+            </Worth>
         </Ingredient>
         <Ingredient name = "Лук">
-            <Value>
+            <Worth>
                 40
-            </Value>
+            </Worth>
         </Ingredient>
         <Ingredient name = "Перец">
-            <Value>
+            <Worth>
                 30
-            </Value>
+            </Worth>
         </Ingredient>
         <Ingredient name = "Картошка">
-            <Value>
+            <Worth>
                 10
-            </Value>
+            </Worth>
         </Ingredient>
     </Ingredients>
 </IngedientCollection>

@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4322d9c9280545b0a2f6da8a7a934774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientIcon: {fileID: 8813128778722056010, guid: 0900d0c7e7e5947f89281190454c03f0, type: 3}
+  _ingredientIcon: {fileID: 8813128778722056010, guid: 0900d0c7e7e5947f89281190454c03f0, type: 3}
   _contentContainer: {fileID: 8981374170703184809}
 --- !u!114 &936595016613019597
 MonoBehaviour:

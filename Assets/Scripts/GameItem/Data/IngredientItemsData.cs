@@ -1,17 +1,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace GameItem
 {
     /// <summary>
     /// Container of all ingredient items and maximum quantity values of ingredients for cooking a dish
     /// </summary>
-    [CreateAssetMenu(fileName = "IngredientsValue", menuName = "GameData/IngredientsValue")]
+    [CreateAssetMenu(fileName = "IngredientItemsData", menuName = "GameData/IngredientItemsData")]
     public class IngredientItemsData : ScriptableObject
     {
-        [FormerlySerializedAs("_ingredientValues")]
         [SerializeField]
         private IngredientItemData[] _ingredientItemsData;
 
