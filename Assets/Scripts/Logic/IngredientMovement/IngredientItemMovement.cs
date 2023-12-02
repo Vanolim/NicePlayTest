@@ -27,27 +27,14 @@ namespace Logic
             _target.Move(clampMovementDirection);
         }
 
-        private void RemoveTarget(GameItem.IngredientItem ingredientItem)
-        {
-            if (_target != default)
-            {
-                _target.OnDestroy -= RemoveTarget;
-                _target = default;
-            }
-        }
-
         public void FixedTick()
         {
             if(_target != default)
                 Move();
         }
 
-        public void StartMove(GameItem.IngredientItem target)
-        {
-            _target = target;
-            _target.OnDestroy += RemoveTarget;
-        }
+        public void StartMove(GameItem.IngredientItem target) => _target = target;
 
-        public void StopMove() => RemoveTarget(_target);
+        public void StopMove() => _target = default;
     }
 }

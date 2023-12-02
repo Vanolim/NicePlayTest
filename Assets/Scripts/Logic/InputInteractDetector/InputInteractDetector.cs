@@ -17,7 +17,7 @@ namespace Logic
         private Camera _camera;
         private IInteractable _target;
 
-        private const float _addDetectedRadius = 0.5f;
+        private const float _addDetectedRadius = 1f;
         private const float _delayDetect = 0.1f;
 
         public event Action<IInteractable> OnStartDetect;

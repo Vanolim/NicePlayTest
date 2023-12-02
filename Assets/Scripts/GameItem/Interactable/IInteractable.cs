@@ -5,6 +5,8 @@ namespace GameItem
     /// </summary>
     public interface IInteractable
     {
+        public bool IsActive { get; }
+        
         public void ShowInteractive();
         public void HideInteractive();
     }

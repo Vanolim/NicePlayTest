@@ -12,6 +12,7 @@ namespace GameItem
         private Rigidbody2D _rb;
 
         public event Action<IngredientItem> OnDestroy;
+        
         public void Move(Vector2 direction) => _rb.velocity = direction;
         
         public void Destroyed()

@@ -1,5 +1,6 @@
 using Core;
 using GameItem;
+using UnityEngine;
 using Zenject;
 
 namespace Logic
@@ -25,7 +26,7 @@ namespace Logic
         {
             if (_isActive)
             {
-                if (_target != default)
+                if (_target != default && _target.IsActive)
                 {
                     _target.HideInteractive();
                 }
@@ -38,10 +39,11 @@ namespace Logic
         //Remove the new interactable object
         private void RemoveTarget()
         {
-            if(_target == default)
-                return;
+            if (_target != default && _target.IsActive)
+            {
+                _target.HideInteractive();
+            }
             
-            _target.HideInteractive();
             _target = default;
         }
         

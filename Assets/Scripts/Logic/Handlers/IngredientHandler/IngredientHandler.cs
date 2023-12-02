@@ -1,5 +1,7 @@
 using Core;
 using GameItem;
+using NUnit.Framework.Internal;
+using UnityEngine;
 using Zenject;
 
 namespace Logic
@@ -37,7 +39,7 @@ namespace Logic
                 if (ingredient is IngredientItem ingredientItem)
                 {
                     _ingredientItemMovement.StartMove(ingredientItem);
-                    ingredientItem.OnDestroy += RemoveTarget;
+                    Debug.Log(ingredientItem.name);
                 }
                 else if (ingredient is IngredientSpot ingredientSpot)
                 {
@@ -57,22 +59,20 @@ namespace Logic
 
         private void RemoveTarget()
         {
-            if (_target != default)
-            {
-                _ingredientItemMovement.StopMove();
-                _target = default;
-            }
+            _ingredientItemMovement.StopMove();
+            _target = default;
             _interactHandler.Activate();
         }
         
         private void RemoveTarget(IngredientItem ingredient)
         {
-            if (_target != default)
+            if (ingredient == _target)
             {
-                _ingredientItemMovement.StopMove();
                 _target = default;
+                _interactHandler.Activate();
+                _ingredientItemMovement.StopMove();
             }
-            _interactHandler.Activate();
+            
             ingredient.OnDestroy -= RemoveTarget;
         }
         

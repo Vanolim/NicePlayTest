@@ -20,6 +20,7 @@ namespace Core
 
         public void Tick()
         {
+            Debug.Log(Application.persistentDataPath);
             CheckInput();
         }
 

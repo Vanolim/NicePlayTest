@@ -1,4 +1,5 @@
 using UnityEngine;
+using Zenject;
 
 namespace Core
 {
@@ -21,5 +22,7 @@ namespace Core
         public string GetLastDishViewValue() => PlayerPrefs.GetString("LastDishViewValue", "None");
         
         public int GetCounterValue() => PlayerPrefs.GetInt("CounterValue", 0);
+
+        public void ResetSave() => PlayerPrefs.DeleteAll();
     }
 }

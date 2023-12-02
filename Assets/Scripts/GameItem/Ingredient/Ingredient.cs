@@ -19,10 +19,19 @@ namespace GameItem
         
         [SerializeField]
         private Material _interactableMaterial;
-        
+
+        private bool _isInstance;
+        private bool _isActive;
+
         public IngredientTypes Type => _type;
-        
+
+        public bool IsActive => _isActive;
+
         public void ShowInteractive() => _spriteRenderer.material = _interactableMaterial;
         public void HideInteractive() => _spriteRenderer.material = _defaultMaterial;
+
+        private void OnEnable() => _isActive = true;
+
+        private void OnDisable() => _isActive = false;
     }
 }
