@@ -1,6 +1,6 @@
 # NicePlayTest
  
-![hippo](https://drive.google.com/file/d/1fLwgNKjn3sK6tefrrHjT9xYZhiJvyTQA/view?usp=sharing)
+![hippo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXVoanp0dzNnaTNndTB1OXV1YTJxY2IwY3pzYWlpNzFsOXNhNDN6biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u3RJ72744beMmLp5FN/source.gif)
 
 # Особенности проекта:
 Тестовое - https://drive.google.com/file/d/1RH5cGWojQRLNKvtwJkLjmnzmwmcJCNok/view?usp=sharing
