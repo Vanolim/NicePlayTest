@@ -1,5 +1,7 @@
 # NicePlayTest
  
+![hippo](https://drive.google.com/file/d/1fLwgNKjn3sK6tefrrHjT9xYZhiJvyTQA/view?usp=sharing)
+
 # Особенности проекта:
 Тестовое - https://drive.google.com/file/d/1RH5cGWojQRLNKvtwJkLjmnzmwmcJCNok/view?usp=sharing
 
