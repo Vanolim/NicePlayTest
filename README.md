@@ -3,8 +3,7 @@
 ![hippo](https://media.giphy.com/media/u3RJ72744beMmLp5FN/giphy.gif)
 
 # Особенности проекта:
-Тестовое - https://drive.google.com/file/d/1RH5cGWojQRLNKvtwJkLjmnzmwmcJCNok/view?usp=sharing
-
+Тестовое - https://drive.google.com/file/d/1vRj0t8SJFKy1BWuXUdhUWksmmjo6hBLe/view?usp=drive_link
 1) Из-за неплохой инкапсуляции и SRP было создано значительное количество сущностей
 для такого проекта. Для облегчения разработки и лучше читаемости кода был
 использован Zenject
